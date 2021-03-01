@@ -9,6 +9,19 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <style>
+        #erroMessage {
+            background: #ffcccc;
+            color: red;
+            height: 60px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        #validationServer03{
+            height: 100px;
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,9 +35,8 @@
                     </div>
                     <div class="card-body">
                         <!--Red Box-->
-                        <div class="mb-3">
-                            <textarea class="form-control is-invalid" id="validationTextarea"
-                                placeholder="Some fiels are missing" required></textarea>
+                        <div id="erroMessage" class="mb-3">
+                            <span>Some fields are missing</span>
                         </div>
                         <!--Three first inputs-->
                         <div class="form-row">
@@ -85,27 +97,27 @@
                                     <div class="input-group-prepend">
                                         <div class="input-group-text bg-secondary">
                                             <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                                    class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadioInline1"><i
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1"><i
                                                         class="fab fa-cc-mastercard"></i></label>
                                             </div>
                                             <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                                    class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadioInline1"><i
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1"><i
                                                         class="fab fa-cc-visa"></i></label>
-                                            </div>
+                                             </div>
                                             <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                                    class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadioInline1"><i
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1"><i
                                                         class="fab fa-cc-diners-club"></i></label>
                                             </div>
                                             <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                                    class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadioInline1"><i
+                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1"><i
                                                         class="fas fa-credit-card"></i></label>
                                             </div>
                                         </div>
@@ -115,8 +127,7 @@
                             <!--message-->
                             <div class="col-6">
                                 <label for="validationServer03">Message</label>
-                                <input type="text" class="form-control" id="validationServer03" placeholder="City"
-                                    required>
+                                <input type="text" class="form-control" id="validationServer03">
                                 <small id="emailHelp" class="form-text text-muted">Add any notes here</small>
                             </div>
 
